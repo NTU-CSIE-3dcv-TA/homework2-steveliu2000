@@ -124,8 +124,8 @@ vc.convert_from_pinhole_camera_parameters(vc_cam)
 
 # set key callback
 shift_pressed = False
-vis.register_key_action_callback(340, toggle_key_shift)
-vis.register_key_action_callback(344, toggle_key_shift)
+vis.register_key_action_callback(340, toggle_key_shift) # GLFW_KEY_LEFT_SHIFT
+vis.register_key_action_callback(344, toggle_key_shift) # GLFW_KEY_RIGHT_SHIFT
 vis.register_key_callback(ord('A'), update_tx)
 vis.register_key_callback(ord('S'), update_ty)
 vis.register_key_callback(ord('D'), update_tz)
